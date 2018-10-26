@@ -1,1 +1,14 @@
 #gitignore file
+
+#ignore most folders
+/Bourguet_Transkriptionen/*
+/Mairan_Transkriptionen/*
+/Michelotti_Transkriptionen/*
+/NicIB_Michelotti_Transkriptionen/*
+/Varignon-NicI_Transkriptionen/*
+/XML Dateien aus Testdump/*
+/xml/*
+
+#ignore finished transformations
+*.html
+*.htm
