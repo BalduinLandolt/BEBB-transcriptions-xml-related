@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE letter SYSTEM "../Schema_and_DTD/entities.dtd">
+
+<correction><orig></orig><corr></corr></correction>
+
+<correction><orig>a</orig><corr>à</corr></correction>
+<correction>o<orig>u</orig><corr>ù</corr></correction>
+
+
+<expan><am></am><ex></ex></expan>
+
+<expan><am><sup>t</sup></am><ex>ent</ex></expan>
+<expan><am>.<sup></sup></am><ex></ex></expan>
+
+<sup></sup>
+
+<expan>D<am></am><ex>aniel </ex>Bernoull&j;</expan>
+
+<expan>a<am>.</am><ex>nte</ex></expan> <expan>d<am>.</am><ex>iem</ex></expan>
+
+Platzhalter
+
+<!-- persontag -->
+<!-- werktag -->
+<!-- brieftag -->
+<!-- figurtag -->
+<!-- orttag -->
+<!-- korporationtag -->
+<!-- sachtag -->
