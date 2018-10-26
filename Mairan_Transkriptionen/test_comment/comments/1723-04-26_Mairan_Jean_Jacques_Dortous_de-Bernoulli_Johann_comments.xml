@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="comments.xsd" id="001">
+    <comment id="1">
+        <language lang="German">
+            <!-- Sprache: nötig? Kürzel oder ausschreiben? -->
+            <p>
+                Katalog könligliche Bibliothek, 1723
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="2">
+        <language lang="German">
+            <p>
+                Affäre Hartsoeker - Ruf Hartsoeker
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="3">
+        <language lang="German">
+            <p>
+                Hartsoeker/Fontenelle/Academie
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="4">
+        <language lang="German">
+            <p>
+                Publikationsprozess 18. Jht - Persönliche Bekanntschaft
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="5">
+        <language lang="German">
+            <p>
+                Verbindung JIB/Leipzig, Kontaktherstellung für Mairan
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="6">
+        <language lang="German">
+            <p>
+                Mairan prix Bordeaux
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="7">
+        <language lang="German">
+            <p>
+                JIB und Newton/Engländer - Konflikt
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="8">
+        <language lang="German">
+            <p>
+                Mairan und Figure de la Terre
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="9">
+        <language lang="German">
+            <p>
+                Nachlass Varignon
+            </p>
+        </language>
+    </comment>
+    
+    <comment id="10">
+        <language lang="German">
+            <p>
+                Edition Mechanik Varignon
+            </p>
+        </language>
+    </comment>
+</comments>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="comments.xsd" id="001">
+    <comment id="1">
+        <language lang="German">
+            <p>
+                Freundschaft und Korrespondenz Varignon/JIB
+            </p>
+        </language>
+    </comment>
+    <comment id="2">
+        <language lang="German">
+            <p>
+                Rolle der Korrespondenz mit Paris/Akademie
+            </p>
+        </language>
+    </comment> 
+    <comment id="3">
+        <language lang="German">
+            <p>
+                Verlorener erster Brief 
+            </p>
+        </language>
+    </comment>
+    <comment id="4">
+        <language lang="German">
+            <p>
+                V hat Briefe vermutlich nicht aufbewahrt, siehe Korr. JIB/V
+            </p>
+        </language>
+    </comment>
+    <comment id="5">
+        <language lang="German">
+            <p>
+                Bernoulli will Briefe zurück - prekäres Material
+            </p>
+        </language>
+    </comment>
+    <comment id="6">
+        <language lang="German">
+            <p>
+                Portrait Newton an Varignon - Korrespondenz dazu mit JIB
+            </p>
+        </language>
+    </comment>
+    <comment id="7">
+        <language lang="German">
+            <p>
+                Kommentar zu Varignong' s Mechanik und seiner Überarbeitung
+            </p>
+        </language>
+    </comment>
+</comments>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letter SYSTEM "entities.dtd">
+<letter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="letter.xsd"
+        page_id="758"
+        title="1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de"
+        catalogue_id="000056388"
+        date="1723.01.05">
+   <persons>
+      <author>
+         <person>
+            <gnd>(DE-588)118509969</gnd>
+            <name>Bernoulli, Johann,</name>
+            <date>1667-1748</date>
+         </person>
+      </author>
+      <recipient>
+         <person>
+            <gnd>no_GND</gnd>
+            <name>Mairan, Jean Jacques Dortous de,</name>
+            <date>1678-1771,</date>
+         </person>
+      </recipient>
+      <mentioned>
+         <person>
+            <gnd>(DE-588)118639056</gnd>
+            <name>Fontenelle, Bernard Le Bovier &lt;&lt;de&gt;&gt;</name>
+            <date>1657-1757</date>
+         </person>
+         <person>
+            <gnd>no_GND</gnd>
+            <name>Newton, Isaac</name>
+            <date>1643-1727</date>
+         </person>
+         <person>
+            <gnd>no_GND</gnd>
+            <name>Varignon, Pierre</name>
+            <date>1654-1722</date>
+         </person>
+      </mentioned>
+   </persons>
+   <images>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0001.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0002.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0003.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0004.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0005.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0006.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_MassS.jpg"/>
+      <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_ProfilS.jpg"/>
+   </images>
+   <text>
+      <p>
+         <facsimile src="http://www.ub.unibas.ch/digi/bez/bernoullibriefe/jpg/L_Ia_661/BAU_5_000056388_0001.jpg"/> 
+      <ref>kollationiert 1.3.18</ref>
+     Basle ce 5.<sup>e</sup> Janvier 1723
+      </p>
+      <p> Monsieur </p>
+      
+      <p> Ce ne me fut pas moins qu'un coup de foudre que la nouvelle inopinée de la mort de mon cher M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person>: Le premier transport de ma consternation fut si grand, que je perdis quasi touts mes sens; sitôt que je me recueillis, une profonde tristesse <correction>accompagn<orig>è</orig><corr>é</corr><orig>é</orig><corr>e</corr></correction> d'un torrent de larmes saisit mon Coeur. Helas! j'ay donc perdu le meilleur de mes Amis, avec qui j'avois entretenu un <correction>com<orig></orig><corr>m</corr>erce</correction> de lettre depuis plus de trente Ans sans interruption, sans alteration, sans demelé, et sans trouble:<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#1"/> C'estoit un Amy sans pareil, un Ami qui me cherissoit <expan>tendrem<am>.<sup>t</sup></am><ex>ent</ex></expan><correction><orig></orig><corr>,</corr></correction> Amy sincere, s'il en fut jamais, fidelle<ref>emedieren?</ref>, officieux, charitable, et bienfaisant, quand il auroit pû m'aid[er] en <correction>sacri<orig>ff</orig><corr>f</corr>iant</correction> ce qu'il avoit de plus precieux, je <correction>croi<orig></orig><corr>s</corr></correction> qu'il ne l'auroit pas epargné: Je l'ai trouvé <correction><orig>a</orig><corr>à</corr></correction> <correction>l<orig></orig><corr>'</corr>épreuv<orig>è</orig><corr>e</corr></correction> toujours le meme, toujours porté pour mes interests sans qu'aucune adversité ou autre incident ait pû ebranler sa constance. </p>
+      <p> Voila Monsieur si je n'ai pas raison en mon particulier de regretter cette perte et si je n'en dois pas étre affligé autant que je le suis: il est vrai que la perte est co&mm;e tant aux ho&nn;etes Gens qu'aux sçavants, vû qu'il <correction>n<orig></orig><corr>'</corr>etoit</correction> pas moins ho&mm;e de bien que sçavant homme. Les sciences se verront privées <correction><orig>a</orig><corr>à</corr></correction> l'avenir de quantités de belles productions, dont il les enrichissoit continuellement et avec une assiduité infatigable: il etoit un ornement des Mathematiques sans en faire parade; modeste et pacifique, ne donnant jamais occasion aux querelles qu'il haissoit <expan>mortellem<am>.<sup>t</sup></am><ex>ent</ex></expan><correction><orig></orig><corr>;</corr></correction> s'il n'y avoit que des <person exists="true" gnd="(DE-588)119062372">Varignons</person> dans le monde<correction><orig></orig><corr>,</corr></correction> on ne verroit regner que paix et tranquilité entre les sçavants. Je m'arrete ici<correction><orig></orig><corr>;</corr></correction> la douleur dont je me sens <ref>Seite 2</ref> penetré ne me permets pas de <correction>m<orig></orig><corr>'</corr>etendre</correction> davantage sur les louanges du defunt; Je laisse le soin <correction><orig>a</orig><corr>à</corr></correction> M.<sup>r</sup> de <person exists="true" gnd="(DE-588)118639056">Fontenelle</person> d'en faire le panegyrique<ref>Bib: Eloge de Varignon</ref>; il le fera<correction><orig></orig><corr>,</corr></correction> je suis sûr<correction><orig></orig><corr>,</corr></correction> d'une maniere digne et convenable <correction><orig>a</orig><corr>à</corr></correction> son sujet. <correction>J<orig></orig><corr>'</corr>étois</correction> co&mm;e averti par un secret presentiment de ce funeste accident, car depuis environ six semaines je ne faisois presque autre chose que penser <correction><orig>a</orig><corr>à</corr></correction> M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person>, l'idée de son rhumatisme dont il se plaignit si amerement dans une de ses dernieres lettres<ref>Brief: Varignon an JIB, 1722.06.04</ref>, se representoit enfin à tout moment <correction><orig>a</orig><corr>à</corr></correction> mon Esprit, jusqu'<correction><orig>a</orig><corr>à</corr></correction> me faire craindre d'apprendre dans peu la triste nouvelle de sa mort: <correction>L'<orig>eve</orig><corr>évene</corr>ment</correction> n'a que trop montré que mon apprehention n'etoit point vaine. </p>
+      <p>Vous m'offrés Monsieur de la maniere du monde la plus obligeante de vouloir succeder dans la partie du commerce que j'avois avec le defunt;<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#2"/> j'embrasse tres volontiers Votre offre,<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#3"/> ce m'est meme une grande consolation d'avoir retrouvé en Vous qui puisse me dedomager de ma perte: L'<expan>empressem<am>.<sup>t</sup></am><ex>ent</ex></expan> que Vous me temoignes de me faire plaisir, quoi que je n'aye pas encor eu le bonheur de Vous en faire aucun, me convainct pleinement que Vous avés la sincerité et <correction>l<orig></orig><corr>'</corr>ho&nn;eteté</correction> desinteressée, qui etoient les vertus dominantes de notre bon M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person>: pour ce qui est de l'Erudition et du savoir dans les mathematiques<correction><orig></orig><corr>,</corr></correction> il ne Vous en manque rien non plus qu'<correction><orig>a</orig><corr>à</corr></correction> lui<correction><orig></orig><corr>.</corr></correction> Les belles pieces que j'ay vuës de Vous dans les Memoires<ref>Bib: Mairan in Mém. Paris</ref> m'en sont un bon garant; Ce qui me fait esperer que je profiterai de Vos lumieres bien plus que Vous ne profiterés des miennes, l'avancement de mon age me faisant voir, que la force et la vigueur d'Esprit vieillit et s'affoiblit avec le corps; cependant je souhaitterois que le peu qui me reste Vous<ref>Seite 3</ref> put etre de quelque utilité. Il est vrai que feu M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person> avoit soin de m'envoyer de la part de l'Academie les Memoires<ref>Sachindex: Mém. Paris</ref>, la Connoissance des Temps<ref>Sachindex: CdT</ref> et d'autres ouvrages<ref>Sachindex: Büchersendungen</ref> qu'Elle donne au jour: Il m'informoit des nouvelles qu'il croioit m'interesser; il se chargoit aussi des commissions que j'avois <correction><orig>a</orig><corr>à</corr></correction> lui donner: Mais n'osant pas Vous importuner, Monsieur, ni user d'autant de liberté que je faisois avec M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person>, qui peut aussi m'avoir eu quelque petites obligations<correction><orig></orig><corr>,</corr></correction> je me borneray <correction><orig>a</orig><corr>à</corr></correction> Vous adresser des comissions aussi rarement qu'il me sera possible. La premiere grace que je souhaite de Vous, c'est de faire en sorte, que toutes mes lettres écrites <correction><orig>a</orig><corr>à</corr></correction> M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person> pendant le cours de notre commerce me soient renvoyées, n'etant utiles à personnes; comme il a eté d'une exactitude et d'une ponctualité extraordinaire, il les aura sans doute toutes conservées, et rangées selon l'ordre des dates, ce qui fera qu'on n'aura point de peine à les chercher:<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#4"/> Il est vrai qu'il y a bien des choses dans ces lettres qui regardent <correction>le<orig></orig><corr>s</corr></correction> sciences, on y verra des reponses <correction><orig>a</orig><corr>à</corr></correction> ses difficultés, des explications de methode, des eclaircissements, des solutions de problemes et tant d'autres choses de cette nature, que je n'envie <correction><orig>a</orig><corr>à</corr></correction> personne: je permets à qui voudra d'en faire bon usage, on n'a qu'<correction><orig>a</orig><corr>à</corr></correction> en tirer des extraits; mais co&mm;e outre cela ces lettres contiennent une infinité de particularités qui concernent mes propres affaires et meme mes affaires personnelles et domestiques (car je lui confiois co&mm;e <correction><orig>a</orig><corr>à</corr></correction> un Amy intime tout ce qui me tenoit <correction><orig>a</orig><corr>à</corr></correction> Coeur) je ne voudrois pas que tout le monde put lire toutes<ref>Seite 4</ref> ces particularites: C'est là la raison pourquoi je desirerois qu'on me renvoyat mes lettres.<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#5"/></p> 
+      <p> Voici Monsieur une autre cas où Vous pourries me preter le secours de Vos bons offices que Vous m'avés offert de si bonne grace: Il y a quelques Ans que feu M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person> me fit savoir que M.<sup>r</sup> <person exists="true" gnd="(DE-588)118587544">Neuton</person> Lui avoit fait présent de son portrait en peinture;<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#6"/> je lui ecrivis en reponse que je lui aurois de l'obligation, s'il pouvoit disposer M.<sup>r</sup> <person exists="true" gnd="(DE-588)118587544">Neuton</person> <correction><orig>a</orig><corr>à</corr></correction> se faire tirer pour en avoir un autre original <correction><orig>a</orig><corr>à</corr></correction> metre dans mon cabinet, aupres d'autres portraits de sçavants et Illustres Ho&mm;es que j'ay deja, que j'en payerois volontiers les frais et les depenses: Mais le genéreux M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person> plutot que de faire cette proposition <correction><orig>a</orig><corr>à</corr></correction> M.<sup>r</sup> <person exists="true" gnd="(DE-588)118587544">Neuton</person> m'offrit liberalement de me ceder le sien, ce que l'honneteté ne me permit pas d'accepter; Lui voyant que ce refus ne venoit que d'un principe de bienseance, il eut la politesse de me dire, qu'il mettroit ordre que je l'aurois un jour apres sa mort; En effet je croi qu'il me l'auroit legué par testament si une mort subite ne l'eut prevenu. Il ne tient <expan>presentem<am>.<sup>t</sup></am><ex>ent</ex></expan> qu'<correction><orig>a</orig><corr>à</corr></correction> ses heritiers<ref>Personen: (?)</ref> de m'en croire sur ma parole et de satisfaire <correction><orig>a</orig><corr>à</corr></correction> la Volonté du defunt, en ce cas je leur aurai de l'obligation<ref>ab en ce cas bis hier: Einschub</ref><correction><orig></orig><corr>,</corr></correction> mais en cas de refus je serois pourtant bien aise d'avoir ce portrait en payant le prix.</p>
+      <p>Je finis en insinuant qu'il seroit de <correction>l<orig></orig><corr>'</corr>interet</correction> du public de prendre soin des manuscrits de M.<sup>r</sup> <person exists="true" gnd="(DE-588)119062372">Varignon</person> dont on recueilliroit le meilleur pour le mettre au jour<correction><orig></orig><corr>;</corr></correction> surtout son grand traité de Mechanique<commentmarker href="./comments/1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de_comments.xml#7"/> auquel il a travaillé long temps, apres son projet, meriteroit bien de n'etre pas enseveli avec l'Auteur.
+         <correction>L<orig></orig><corr>'</corr>espace</correction> me manque. Je suis avec une estime toute particuliere </p>
+      <p>Monsieur</p>
+      <p>  Votre tres humble et tres</p>
+      <p>obeissant serviteur</p>
+      <p>J. Bernoulli</p>
+   </text>
+</letter>
