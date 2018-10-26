@@ -109,13 +109,15 @@
                 <xsl:apply-templates/>
             </div>
 
-            <div id="references">
+          <div id="references">
+              <h3>References</h3>
               <ol>
                 <xsl:apply-templates select="//ref" mode="references"/>
               </ol>
             </div>
           
           <div id="comments">
+              <h3>Comments</h3>
               <ol>
                   <xsl:apply-templates select="//commentmarker" mode="comments"/>
               </ol>
@@ -131,7 +133,7 @@
                 <xsl:text>#ref</xsl:text>
                 <xsl:number level="any" count="ref" format="1"/>
             </xsl:attribute>
-            <sup><xsl:number level="any" count="ref" format="1"/></sup>
+            <sup style="background-color:Orange;">[Reference: <xsl:number level="any" count="ref" format="1"/>]</sup>
         </a>
     </xsl:template>
 
@@ -252,9 +254,9 @@
         <a class="comment_marker">
             <xsl:attribute name="href">
                 <xsl:text>#cref</xsl:text>
-                <xsl:number level="any" count="ref" format="1"/>
+                <xsl:number level="any" count="commentmarker" format="1"/>
             </xsl:attribute>
-            <sup><xsl:number level="any" count="ref" format="1"/></sup>
+            <sup><xsl:number level="any" count="commentmarker" format="1"/></sup>
         </a>
     </xsl:template>
     
@@ -271,7 +273,7 @@
         <li>
             <xsl:attribute name="id">
                 <xsl:text>cref</xsl:text>
-                <xsl:number level="any" count="ref" format="1"/>
+                <xsl:number level="any" count="cref" format="1"/>
             </xsl:attribute>
             
             <xsl:value-of select="exactly-one(document($document_reference)/comments/comment[@id=$id_reference])"></xsl:value-of>
