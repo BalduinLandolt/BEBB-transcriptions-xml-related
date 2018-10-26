@@ -197,7 +197,7 @@
     </xsl:template>
 
     <xsl:template match="entity">
-        <a class="salsah-link">
+        <a class="salsah-link" style="background-color:DodgerBlue">
             <xsl:attribute name="href"><xsl:value-of select="@ref" /></xsl:attribute>
             <xsl:apply-templates/>
         </a>
