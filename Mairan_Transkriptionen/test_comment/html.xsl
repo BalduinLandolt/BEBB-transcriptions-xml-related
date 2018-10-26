@@ -262,7 +262,16 @@
     
     <!-- person reference in text -->
     <xsl:template match="text//person">
-        <xsl:apply-templates/>
+        <span type="person">
+            <xsl:attribute name="style">
+                <xsl:choose>
+                    <!-- highlights persons according to weather or not they are tagged "exists"; NB: doesn't check if they actually exist -->
+                    <xsl:when test="@exists">background-color:green</xsl:when>
+                    <xsl:otherwise>background-color:red</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     
     <!-- handling of comments -->
