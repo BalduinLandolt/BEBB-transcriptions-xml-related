@@ -262,7 +262,7 @@
     
     <!-- person reference in text -->
     <xsl:template match="text//person">
-        <xsl:value-of select="."/>
+        <xsl:apply-templates/>
     </xsl:template>
     
     <!-- handling of comments -->
