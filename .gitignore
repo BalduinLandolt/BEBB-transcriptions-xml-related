@@ -12,3 +12,6 @@
 #ignore finished transformations
 *.html
 *.htm
+
+#include forder for comment tests
+!/Mairan_Transkriptionen/test_comment/*
