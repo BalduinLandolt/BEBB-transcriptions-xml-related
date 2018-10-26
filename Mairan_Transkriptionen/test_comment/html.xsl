@@ -66,7 +66,22 @@
                     display: inline-flex;
                     background: url('icons/file_icon.gif');
                     background-size: cover;
-                 } 
+                    } 
+                    
+                    body {
+                    font-family: "Cambria";
+                    display: block;
+                    width: 600pt;
+                    padding-top: 20pt;
+                    padding-left: 60pt;
+                    font-size: 14pt;
+                    line-height: 1.5;
+                    }
+                    
+                    p {
+                    display: block;
+                    text-align: justify;
+                    }
                  
                 </style>
             </head>
@@ -86,7 +101,7 @@
     </xsl:template>
     
     <xsl:template match="persons/author|recipient|mentioned">
-        <xsl:value-of select="./local-name()"/>
+        <h4><xsl:value-of select="./local-name()"/></h4>
         <ul>
             <xsl:apply-templates/>
         </ul>
@@ -103,6 +118,7 @@
     <xsl:template match="images"></xsl:template>
 
     <xsl:template match="text">
+        <h1>Text</h1>
       <div>
 
             <div id="transcription">
