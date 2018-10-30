@@ -149,7 +149,7 @@
                 <xsl:text>#ref</xsl:text>
                 <xsl:number level="any" count="ref" format="1"/>
             </xsl:attribute>
-            <sup style="background-color:Orange;">[Reference: <xsl:number level="any" count="ref" format="1"/>]</sup>
+            <sup style="color:Orange;">[Reference: <xsl:number level="any" count="ref" format="1"/>]</sup>
         </a>
     </xsl:template>
 
@@ -197,7 +197,7 @@
     </xsl:template>
 
     <xsl:template match="entity">
-        <a class="salsah-link" style="background-color:DodgerBlue">
+        <a class="salsah-link" style="color:DodgerBlue">
             <xsl:attribute name="href"><xsl:value-of select="@ref" /></xsl:attribute>
             <xsl:apply-templates/>
         </a>
@@ -266,8 +266,8 @@
             <xsl:attribute name="style">
                 <xsl:choose>
                     <!-- highlights persons according to weather or not they are tagged "exists"; NB: doesn't check if they actually exist -->
-                    <xsl:when test="@exists">background-color:green</xsl:when>
-                    <xsl:otherwise>background-color:red</xsl:otherwise>
+                    <xsl:when test="@exists">color:green</xsl:when>
+                    <xsl:otherwise>color:red</xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
             <xsl:apply-templates/>
