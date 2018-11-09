@@ -12,5 +12,8 @@
 #ignore finished transformations
 *.html
 
+#ignore weird files (no idea, what they do...)
+.DS_Store
+
 #include forder for comment tests
 !/Mairan_Transkriptionen/test_comment
