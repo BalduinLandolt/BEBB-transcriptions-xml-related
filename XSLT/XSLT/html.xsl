@@ -219,127 +219,144 @@
         <td><xsl:apply-templates/></td>
     </xsl:template>
     
-    <!-- get original version -->
+    <!-- get corrected version -->
     <xsl:template match="correction"><xsl:apply-templates/></xsl:template>
     
-    <xsl:template match="correction/corr"></xsl:template>
+    <xsl:template match="correction/orig"></xsl:template>
     
-    <xsl:template match="correction/orig"><xsl:apply-templates/></xsl:template>
+    <xsl:template match="correction/corr"><xsl:apply-templates/></xsl:template>
     
-    <!-- expan: get non-expanded reading -->
+    <!-- expan: get expanded reading -->
     <xsl:template match="expan"><xsl:apply-templates/></xsl:template>
     
-    <!-- ignore ex -->
-    <xsl:template match="expan/ex"></xsl:template>
+    <!-- am: ignore original reading -->
+    <xsl:template match="expan/am"></xsl:template>
     
-    <!-- keep am -->
-    <xsl:template match="expan/am"><xsl:apply-templates/></xsl:template>
+    <!-- ex: get editorial expansions -->
+    <xsl:template match="expan/ex"><xsl:apply-templates/></xsl:template>
     
     <!-- entities -->
-    <xsl:template match="mm_entity">m̄</xsl:template>
+    <xsl:template match="mm_entity">mm</xsl:template>
     
-    <xsl:template match="nn_entity">n̄</xsl:template>
+    <xsl:template match="nn_entity">nn</xsl:template>
 
-    <xsl:template match="etc._entity">&amp;c</xsl:template>
+    <xsl:template match="etc._entity">etc.</xsl:template>
 
-    <xsl:template match="ndot_entity">.</xsl:template>
+    <xsl:template match="ndot_entity"></xsl:template>
     
-    <xsl:template match="oe_entity">œ</xsl:template>
+    <xsl:template match="oe_entity">oe</xsl:template>
     
-    <xsl:template match="ae_entity">æ</xsl:template>
+    <xsl:template match="ae_entity">ae</xsl:template>
     
-    <xsl:template match="AE_entity">Æ</xsl:template>
+    <xsl:template match="AE_entity">Ae</xsl:template>
     
-    <xsl:template match="aacut_entity">á</xsl:template>
+    <xsl:template match="aacut_entity">a</xsl:template>
     
-    <xsl:template match="agrav_entity">à</xsl:template>
+    <xsl:template match="agrav_entity">a</xsl:template>
     
-    <xsl:template match="ahat_entity">â</xsl:template>
+    <xsl:template match="ahat_entity">a</xsl:template>
     
-    <xsl:template match="am_entity">[a-]</xsl:template>
+    <xsl:template match="am_entity">am</xsl:template>
     
-    <xsl:template match="eacut_entity">é</xsl:template>
+    <xsl:template match="eacut_entity">e</xsl:template>
     
-    <xsl:template match="egrav_entity">è</xsl:template>
+    <xsl:template match="egrav_entity">e</xsl:template>
     
-    <xsl:template match="ehat_entity">ê</xsl:template>
+    <xsl:template match="ehat_entity">e</xsl:template>
     
-    <xsl:template match="em_entity">[e-]</xsl:template>
+    <xsl:template match="em_entity">em</xsl:template>
     
-    <xsl:template match="en_entity">[-e]</xsl:template>
+    <xsl:template match="en_entity">en</xsl:template>
     
-    <xsl:template match="oacut_entity">ó</xsl:template>
+    <xsl:template match="oacut_entity">o</xsl:template>
     
-    <xsl:template match="ograv_entity">ò</xsl:template>
+    <xsl:template match="ograv_entity">o</xsl:template>
     
-    <xsl:template match="ohat_entity">ô</xsl:template>
+    <xsl:template match="ohat_entity">o</xsl:template>
     
-    <xsl:template match="uacut_entity">ú</xsl:template>
+    <xsl:template match="uacut_entity">u</xsl:template>
     
-    <xsl:template match="ugrav_entity">ù</xsl:template>
+    <xsl:template match="ugrav_entity">u</xsl:template>
     
-    <xsl:template match="uhat_entity">û</xsl:template>
+    <xsl:template match="uhat_entity">u</xsl:template>
     
-    <xsl:template match="que_entity">[qz]</xsl:template>
+    <xsl:template match="que_entity">que</xsl:template>
     
-    <xsl:template match="um_entity">[u-]</xsl:template>
+    <xsl:template match="um_entity">um</xsl:template>
     
-    <xsl:template match="ydots_entity">ÿ</xsl:template>
+    <xsl:template match="ydots_entity">y</xsl:template>
     
-    <xsl:template match="septemb_entity">7b</xsl:template>
+    <xsl:template match="septemb_entity">septemb</xsl:template>
     
-    <xsl:template match="decemb_entity">10b</xsl:template>
+    <xsl:template match="decemb_entity">décemb</xsl:template>
     
-    <xsl:template match="amajgrav_entity">À</xsl:template>
+    <xsl:template match="amajgrav_entity">A</xsl:template>
     
-    <xsl:template match="an_entity">[-a]</xsl:template>
+    <xsl:template match="an_entity">an</xsl:template>
     
-    <xsl:template match="egravmaj_entity">È</xsl:template>
+    <xsl:template match="egravmaj_entity">E</xsl:template>
     
-    <xsl:template match="igrav_entity">ì</xsl:template>
+    <xsl:template match="igrav_entity">i</xsl:template>
     
-    <xsl:template match="ihat_entity">î</xsl:template>
+    <xsl:template match="ihat_entity">i</xsl:template>
     
-    <xsl:template match="qui_entity">[q-]</xsl:template>
+    <xsl:template match="qui_entity">qui</xsl:template>
     
-    <xsl:template match="per_entity">[p-]</xsl:template>
+    <xsl:template match="per_entity">per</xsl:template>
     
-    <xsl:template match="Septemb_entity">[7-b]</xsl:template>
+    <xsl:template match="Septemb_entity">Septemb</xsl:template>
     
-    <xsl:template match="tur_entity">[tz]</xsl:template>
+    <xsl:template match="tur_entity">tur</xsl:template>
     
-    <xsl:template match="us_entity">[s]</xsl:template>
+    <xsl:template match="us_entity">us</xsl:template>
     
-    <xsl:template match="NB_entity">[NB]</xsl:template>
+    <xsl:template match="NB_entity">NB</xsl:template>
    
-    <xsl:template match="on_entity">[on]</xsl:template>
+    <xsl:template match="on_entity">on</xsl:template>
     
-    <xsl:template match="pp_entity">[pp]</xsl:template>
+    <xsl:template match="pp_entity">etc.</xsl:template>
     
-    <xsl:template match="klammerzu_entity">:|</xsl:template>
+    <xsl:template match="klammerzu_entity">)</xsl:template>
   
-    <xsl:template match="klammerauf_entity">|:</xsl:template>
+    <xsl:template match="klammerauf_entity">(</xsl:template>
     
-    <xsl:template match="ll_entity">[ll]</xsl:template>
+    <xsl:template match="ll_entity">ll</xsl:template>
     
-    <xsl:template match="OE_entity">Œ</xsl:template>
+    <xsl:template match="OE_entity">Oe</xsl:template>
     
-    <xsl:template match="die_entity">[d.]</xsl:template>
+    <xsl:template match="die_entity">die</xsl:template>
     
-    <xsl:template match="Octob_entity">[8-b]</xsl:template>
+    <xsl:template match="Octob_entity">Octob</xsl:template>
     
-    <xsl:template match="nddot_entity">:</xsl:template>
+    <xsl:template match="nddot_entity"/>
     
-    <xsl:template match="j_entity">j</xsl:template>
+    <xsl:template match="j_entity">i</xsl:template>
     
-    <xsl:template match="par_entity">[par]</xsl:template>
+    <xsl:template match="par_entity">par</xsl:template>
     
-    <xsl:template match="est_entity">[est]</xsl:template>
+    <xsl:template match="est_entity">est</xsl:template>
     
-    <xsl:template match="esse_entity">[esse]</xsl:template>
+    <xsl:template match="esse_entity">esse</xsl:template>
     
-    <xsl:template match="omn_entity">o&#297;</xsl:template>
+    <xsl:template match="omni_entity">omni</xsl:template>
     
-    <xsl:template match="im_entity">[i-]</xsl:template>
+    <xsl:template match="im_entity">im</xsl:template>
     
+    <xsl:template match="con_entity">con</xsl:template>
+    
+    <xsl:template match="septembre_entity">septembre</xsl:template>
+    
+    <xsl:template match="octob_entity">octob</xsl:template>
+    
+    <xsl:template match="octobre_entity">octobre</xsl:template>
+    
+    <xsl:template match="novemb_entity">novemb</xsl:template>
+    
+    <xsl:template match="novembre_entity">novembre</xsl:template>
+    
+    <xsl:template match="decembre_entity">décembre</xsl:template>
+    
+    <xsl:template match="Decemb_entity">Decemb</xsl:template>
+    
+    <xsl:template match="Novemb_entity">Novemb</xsl:template>
 </xsl:transform>

@@ -17,7 +17,7 @@
             <xs:attribute name="date" type="date_attribute" use="required"/>
         </xs:complexType>
     </xs:element>
-
+    
     <!-- title of the letter (last segment in Wiki-URL ) -->
     <xs:simpleType name="title_attribute">
         <xs:restriction base="xs:string">
@@ -25,8 +25,8 @@
             <xs:pattern value="\d{4}-\d{2}(-\d{2})?_.+-.+"/>
         </xs:restriction>
     </xs:simpleType>
-
-    <!-- valid university library catalogie id -->
+    
+    <!-- valid university library catalogie id --> 
     <xs:simpleType name="catalogue_id_attribute">
         <xs:restriction base="xs:string">
             <xs:pattern value="000\d{6}"/>
@@ -51,24 +51,24 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- a list of persons -->
+    <!-- a list of persons --> 
     <xs:complexType name="person_list_element">
         <xs:sequence>
             <xs:element name="person" type="person_element" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-
+    
     <!-- Information about a person (author, recipient, or mentioned person) -->
     <xs:complexType name="person_element">
         <xs:sequence>
-            <xs:element name="gnd" type="gnd_element"/>
+            <xs:element name="gnd" type="gnd_element" />
             <!-- Name of the person (family name, given name) -->
             <xs:element name="name"/>
             <!-- year of birth and year of death if known -->
             <xs:element name="date" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-
+    
     <!-- GND/IAF identifier or "no_GND" if not existent or known -->
     <xs:simpleType name="gnd_element">
         <!-- formal validation -->
@@ -77,7 +77,7 @@
             <xs:pattern value="\(DE-588\).+|no_GND"/>
         </xs:restriction>
     </xs:simpleType>
-
+    
     <!-- list of facsimiles referred to in the transcription -->
     <xs:complexType name="images_element">
         <xs:sequence maxOccurs="unbounded" minOccurs="0">
@@ -97,7 +97,7 @@
     <xs:complexType name="paragraph_element" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="expan" type="expan_element"/>            
             <xs:element name="facsimile" type="facsimile_element"/>
             <xs:element name="ref" type="ref_element"/>
             <xs:element name="i" type="italic_element"/>
@@ -117,7 +117,7 @@
             <xs:group ref="tags_in_entities"/>
         </xs:choice>
     </xs:complexType>
-
+    
     <!-- correction -->
     <xs:complexType name="orig_element_correction" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
@@ -130,19 +130,19 @@
             <xs:group ref="tags_in_entities"/>
         </xs:choice>
     </xs:complexType>
-
+    
     <xs:complexType name="corr_element_correction" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
-            <xs:element name="i" type="italic_element"/>
-            <xs:element name="sup" type="sup_element"/>
-            <xs:element name="sub" type="sup_element"/>
-            <xs:element name="entity" type="entity_element"/>
-            <xs:element name="u" type="underline_element"/>
-            <xs:element name="b" type="bold_element"/>
-            <xs:group ref="tags_in_entities"/>
+        <xs:element name="i" type="italic_element"/>
+        <xs:element name="sup" type="sup_element"/>
+        <xs:element name="sub" type="sup_element"/>
+        <xs:element name="entity" type="entity_element"/>
+        <xs:element name="u" type="underline_element"/>
+        <xs:element name="b" type="bold_element"/>
+        <xs:group ref="tags_in_entities"/>
         </xs:choice>
     </xs:complexType>
-
+    
     <xs:complexType name="correction_element" mixed="true">
         <xs:sequence maxOccurs="unbounded" minOccurs="1">
             <xs:element name="orig" type="orig_element_correction"/>
@@ -155,12 +155,12 @@
                 <xs:element name="u" type="underline_element"/>
                 <xs:element name="b" type="bold_element"/>
                 <xs:group ref="tags_in_entities"/>
-            </xs:choice>
+            </xs:choice>  
         </xs:sequence>
     </xs:complexType>
-
+    
     <!-- expansion of an abbreviation -->
-    <!--    <xs:complexType name="expan_element" mixed="true">
+<!--    <xs:complexType name="expan_element" mixed="true">
         <xs:sequence maxOccurs="unbounded" minOccurs="1">
             <xs:choice maxOccurs="unbounded" minOccurs="0">
                 <xs:element name="i" type="italic_element"/>
@@ -190,15 +190,15 @@
         </xs:sequence>
         <xs:assert test="(count(am) != 0 and count(ex) != 0)"/>
     </xs:complexType>
-
+    
     <xs:group name="actual_expansion">
         <xs:sequence>
             <xs:element name="am" type="am_element"/>
             <xs:element name="ex" type="ex_element"/>
         </xs:sequence>
     </xs:group>
-
-
+    
+    
     <xs:complexType name="am_element" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
             <xs:element name="i" type="italic_element"/>
@@ -208,9 +208,9 @@
             <xs:element name="u" type="underline_element"/>
             <xs:element name="b" type="bold_element"/>
             <xs:group ref="tags_in_entities"/>
-        </xs:choice>
+        </xs:choice>  
     </xs:complexType>
-
+    
     <xs:complexType name="ex_element" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
             <xs:element name="i" type="italic_element"/>
@@ -220,7 +220,7 @@
             <xs:element name="u" type="underline_element"/>
             <xs:element name="b" type="bold_element"/>
             <xs:group ref="tags_in_entities"/>
-        </xs:choice>
+        </xs:choice>  
     </xs:complexType>
 
     <!-- a footnote (embedded in the text, but rendered at the end of the text in HTML) -->
@@ -240,7 +240,7 @@
             <xs:element name="figure" type="figure_element"/>
             <xs:group ref="tags_in_entities"/>
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="expan" type="expan_element"/>  
         </xs:choice>
     </xs:complexType>
 
@@ -257,26 +257,26 @@
             <xs:group ref="tags_in_entities"/>
             <xs:element name="b" type="bold_element"/>
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="expan" type="expan_element"/>    
         </xs:choice>
     </xs:complexType>
 
     <!-- text rendered as underline -->
     <xs:complexType name="underline_element" mixed="true">
-        <xs:choice maxOccurs="unbounded" minOccurs="0">
-            <xs:element name="sup" type="sup_element"/>
-            <xs:element name="ref" type="ref_element"/>
-            <xs:element name="a" type="anchor_element"/>
-            <xs:element name="math" type="math_element"/>
-            <xs:element name="facsimile" type="facsimile_element"/>
-            <xs:element name="i" type="italic_element"/>
-            <xs:element name="sub" type="sup_element"/>
-            <xs:group ref="tags_in_entities"/>
-            <xs:element name="b" type="bold_element"/>
-            <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
-            <xs:element name="u" type="underline_element"/>
-        </xs:choice>
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="sup" type="sup_element"/>
+        <xs:element name="ref" type="ref_element"/>
+        <xs:element name="a" type="anchor_element"/>
+        <xs:element name="math" type="math_element"/>
+        <xs:element name="facsimile" type="facsimile_element"/>
+        <xs:element name="i" type="italic_element"/>
+        <xs:element name="sub" type="sup_element"/>
+        <xs:group ref="tags_in_entities"/>
+        <xs:element name="b" type="bold_element"/>
+        <xs:element name="correction" type="correction_element"/>
+        <xs:element name="expan" type="expan_element"/> 
+        <xs:element name="u" type="underline_element"/>
+    </xs:choice>
     </xs:complexType>
 
     <!-- text rendered as bold -->
@@ -292,7 +292,7 @@
             <xs:group ref="tags_in_entities"/>
             <xs:element name="i" type="italic_element"/>
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="expan" type="expan_element"/>    
         </xs:choice>
     </xs:complexType>
 
@@ -300,29 +300,29 @@
     <xs:complexType name="sub_element" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="expan" type="expan_element"/> 
             <xs:group ref="tags_in_entities"/>
-        </xs:choice>
+        </xs:choice>  
     </xs:complexType>
 
     <!-- text rendered as superscript -->
     <xs:complexType name="sup_element" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="0">
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="expan" type="expan_element"/> 
             <xs:group ref="tags_in_entities"/>
-        </xs:choice>
+        </xs:choice>  
     </xs:complexType>
 
     <!-- mathematical formula as LaTeX -->
     <xs:complexType name="math_element" mixed="true">
-        <xs:choice maxOccurs="unbounded" minOccurs="0">
-            <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>
-            <xs:group ref="tags_in_entities"/>
-        </xs:choice>
-    </xs:complexType>
-
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="correction" type="correction_element"/>
+        <xs:element name="expan" type="expan_element"/> 
+        <xs:group ref="tags_in_entities"/>
+    </xs:choice>  
+</xs:complexType>
+    
     <!-- facsimile referred to in the text (indicates pacge break) -->
     <xs:complexType name="facsimile_element">
         <xs:attribute name="src" use="required">
@@ -333,7 +333,7 @@
             </xs:simpleType>
         </xs:attribute>
     </xs:complexType>
-
+    
     <!-- figure referred to in the text -->
     <xs:complexType name="figure_element">
         <xs:attribute name="src" use="required">
@@ -358,7 +358,7 @@
     <xs:complexType name="entity_element" mixed="true">
         <xs:attribute name="ref" type="xs:anyURI" use="required"/>
     </xs:complexType>
-
+    
     <!-- tabular structure -->
     <xs:complexType name="table_element">
         <xs:sequence minOccurs="1" maxOccurs="unbounded">
@@ -398,13 +398,13 @@
 
     <!-- definition list element -->
     <xs:complexType name="dd_element" mixed="true"/>
-
+    
     <!-- empty Tags defined in entities -->
-
+    
     <xs:group name="tags_in_entities">
         <xs:choice>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="mm_entity"/>
+                <xs:element name="mm_entity"/> 
                 <xs:element name="nn_entity"/>
                 <xs:element name="etc._entity"/>
                 <xs:element name="ndot_entity"/>
@@ -455,11 +455,19 @@
                 <xs:element name="par_entity"/>
                 <xs:element name="est_entity"/>
                 <xs:element name="esse_entity"/>
-                <xs:element name="omni_entity"/>
                 <xs:element name="im_entity"/>
-            </xs:choice>
+                <xs:element name="con_entity"/>
+                <xs:element name="septembre_entity"/>
+                <xs:element name="octob_entity"/>
+                <xs:element name="octobre_entity"/>
+                <xs:element name="novemb_entity"/>
+                <xs:element name="novembre_entity"/>
+                <xs:element name="decembre_entity"/>
+                <xs:element name="Decemb_entity"/>
+                <xs:element name="Novemb_entity"/>
+            </xs:choice>    
         </xs:choice>
     </xs:group>
-
+ 
 
 </xs:schema>

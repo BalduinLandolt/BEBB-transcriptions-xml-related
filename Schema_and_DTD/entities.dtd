@@ -49,5 +49,13 @@
 <!ENTITY par "<par_entity/>" >
 <!ENTITY est "<est_entity/>" >
 <!ENTITY esse "<esse_entity/>" >
-<!ENTITY omni "<omni_entity/>">
 <!ENTITY im "<im_entity/>" >
+<!ENTITY con "<con_entity/>" >
+<!ENTITY septembre "<septembre_entity/>" >
+<!ENTITY novembre "<novembre_entity/>" >
+<!ENTITY novemb "<novemb_entity/>" >
+<!ENTITY decembre "<decembre_entity/>" >
+<!ENTITY octob "<octob_entity/>" >
+<!ENTITY octobre "<octobre_entity/>" >
+<!ENTITY Novemb "<Novemb_entity/>" >
+<!ENTITY Decemb "<Decemb_entity/>" >

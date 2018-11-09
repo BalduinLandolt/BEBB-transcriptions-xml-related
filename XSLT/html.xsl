@@ -56,7 +56,7 @@
                     
                 </script>
                 
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
                 
                 <style>
                  
@@ -66,18 +66,45 @@
                     display: inline-flex;
                     background: url('icons/file_icon.gif');
                     background-size: cover;
-                 } 
+                    } 
+                    
+                    body {
+                    font-family: "Cambria";
+                    display: block;
+                    width: 800pt;
+                    padding-top: 20pt;
+                    padding-left: 60pt;
+                    font-size: 14pt;
+                    line-height: 1.5;
+                    }
+                    
+                    p {
+                    display: block;
+                    text-align: justify;
+                    }
                  
                 </style>
             </head>
             
             <body>
+                <h1>From <span style="color:rgb(180, 0, 0)"><xsl:apply-templates select="//author" mode="title" /></span><br/>
+                    To <span style="color:rgb(180, 0, 0)"><xsl:apply-templates select="//recipient" mode="title" /></span><br/>
+                    Date: <span style="color:rgb(180, 0, 0)"><xsl:value-of select="/letter/@date"/></span><br/>
+                    (Systemnummer: <span style="color:rgb(180, 0, 0)"><xsl:value-of select="/letter/@catalogue_id"/></span>)</h1>
                 <xsl:apply-templates/>
             </body>
         </html>
         
     </xsl:template>
     
+    
+    <xsl:template match="author" mode="title">
+        <xsl:value-of select="person/name"/>
+    </xsl:template>
+    
+    <xsl:template match="recipient" mode="title">
+        <xsl:value-of select="person/name"/>
+    </xsl:template>
 
     <xsl:template match="persons">
         <div>
@@ -85,14 +112,14 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="author|recipient|mentioned">
-        <xsl:value-of select="./local-name()"/>
+    <xsl:template match="persons/author|recipient|mentioned">
+        <h4><xsl:value-of select="./local-name()"/></h4>
         <ul>
             <xsl:apply-templates/>
         </ul>
     </xsl:template>
     
-    <xsl:template match="person">
+    <xsl:template match="persons//person">
         <li>
             <xsl:value-of select="./gnd"/><br/>
             <xsl:value-of select="./name"/>    
@@ -103,17 +130,27 @@
     <xsl:template match="images"></xsl:template>
 
     <xsl:template match="text">
+        <h1>Text</h1>
       <div>
 
             <div id="transcription">
                 <xsl:apply-templates/>
             </div>
 
-            <div id="references">
+          <div id="references">
+              <h3>References</h3>
               <ol>
                 <xsl:apply-templates select="//ref" mode="references"/>
               </ol>
             </div>
+          
+          <div id="comments">
+              <h3>Comments</h3>
+              <ol>
+                  <xsl:apply-templates select="//commentmarker" mode="comments"/>
+              </ol>
+          </div>
+          
       </div>
 
     </xsl:template>
@@ -124,7 +161,7 @@
                 <xsl:text>#ref</xsl:text>
                 <xsl:number level="any" count="ref" format="1"/>
             </xsl:attribute>
-            <sup><xsl:number level="any" count="ref" format="1"/></sup>
+            <sup style="color:Orange;">[Reference: <xsl:number level="any" count="ref" format="1"/>]</sup>
         </a>
     </xsl:template>
 
@@ -172,7 +209,7 @@
     </xsl:template>
 
     <xsl:template match="entity">
-        <a class="salsah-link">
+        <a class="salsah-link" style="color:DodgerBlue">
             <xsl:attribute name="href"><xsl:value-of select="@ref" /></xsl:attribute>
             <xsl:apply-templates/>
         </a>
@@ -235,6 +272,54 @@
     <!-- ex: get editorial expansions -->
     <xsl:template match="expan/ex"><xsl:apply-templates/></xsl:template>
     
+    <!-- person reference in text -->
+    <xsl:template match="text//person">
+        <span type="person">
+            <xsl:attribute name="style">
+                <xsl:choose>
+                    <!-- highlights persons according to weather or not they are tagged "exists"; NB: doesn't check if they actually exist -->
+                    <xsl:when test="@exists">color:green</xsl:when>
+                    <xsl:otherwise>color:red</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <!-- handling of comments -->
+    <xsl:template match="commentmarker">
+        <a class="comment_marker">
+            <xsl:attribute name="href">
+                <xsl:text>#cref</xsl:text>
+                <xsl:number level="any" count="commentmarker" format="1"/>
+            </xsl:attribute>
+            <sup><xsl:number level="any" count="commentmarker" format="1"/></sup>
+        </a>
+    </xsl:template>
+    
+    <xsl:template match="commentmarker" mode="comments">
+        
+        <xsl:variable name="document_reference">
+            <xsl:value-of select="tokenize(@href,'#')[1]"/>
+        </xsl:variable>
+        
+        <xsl:variable name="id_reference">
+            <xsl:value-of select="tokenize(@href,'#')[2]"/>
+        </xsl:variable>
+        
+        <li>
+            <xsl:attribute name="id">
+                <xsl:text>cref</xsl:text>
+                <xsl:number level="any" count="cref" format="1"/>
+            </xsl:attribute>
+            
+            <xsl:value-of select="exactly-one(document($document_reference)/comments/comment[@id=$id_reference])"></xsl:value-of>
+            
+        </li>
+        
+       
+    </xsl:template>
+    
     <!-- entities -->
     <xsl:template match="mm_entity">mm</xsl:template>
     
@@ -248,7 +333,7 @@
     
     <xsl:template match="ae_entity">ae</xsl:template>
     
-    <xsl:template match="AE_entity">Ae</xsl:template>
+    <xsl:template match="AE_entity">AE</xsl:template>
     
     <xsl:template match="aacut_entity">a</xsl:template>
     
@@ -338,7 +423,23 @@
     
     <xsl:template match="esse_entity">esse</xsl:template>
     
-    <xsl:template match="omni_entity">omni</xsl:template>
-    
     <xsl:template match="im_entity">im</xsl:template>
+    
+    <xsl:template match="con_entity">con</xsl:template>
+    
+    <xsl:template match="septembre_entity">septembre</xsl:template>
+    
+    <xsl:template match="octob_entity">octob</xsl:template>
+    
+    <xsl:template match="octobre_entity">octobre</xsl:template>
+    
+    <xsl:template match="novemb_entity">novemb</xsl:template>
+    
+    <xsl:template match="novembre_entity">novembre</xsl:template>
+    
+    <xsl:template match="decembre_entity">décembre</xsl:template>
+    
+    <xsl:template match="Decemb_entity">Decemb</xsl:template>
+    
+    <xsl:template match="Novemb_entity">Novemb</xsl:template>
 </xsl:transform>
