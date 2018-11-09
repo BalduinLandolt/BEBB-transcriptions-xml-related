@@ -71,7 +71,7 @@
                     body {
                     font-family: "Cambria";
                     display: block;
-                    width: 600pt;
+                    width: 800pt;
                     padding-top: 20pt;
                     padding-left: 60pt;
                     font-size: 14pt;
