@@ -339,4 +339,6 @@
     <xsl:template match="esse_entity">esse</xsl:template>
     
     <xsl:template match="omni_entity">omni</xsl:template>
+    
+    <xsl:template match="im_entity">im</xsl:template>
 </xsl:transform>

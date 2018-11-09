@@ -340,4 +340,6 @@
     
     <xsl:template match="omn_entity">o&#297;</xsl:template>
     
+    <xsl:template match="im_entity">[i-]</xsl:template>
+    
 </xsl:transform>
