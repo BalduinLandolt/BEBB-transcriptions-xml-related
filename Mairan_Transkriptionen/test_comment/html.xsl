@@ -87,12 +87,24 @@
             </head>
             
             <body>
+                <h1>From <span style="color:rgb(180, 0, 0)"><xsl:apply-templates select="//author" mode="title" /></span><br/>
+                    To <span style="color:rgb(180, 0, 0)"><xsl:apply-templates select="//recipient" mode="title" /></span><br/>
+                    Date: <span style="color:rgb(180, 0, 0)"><xsl:value-of select="/letter/@date"/></span><br/>
+                    (Systemnummer: <span style="color:rgb(180, 0, 0)"><xsl:value-of select="/letter/@catalogue_id"/></span>)</h1>
                 <xsl:apply-templates/>
             </body>
         </html>
         
     </xsl:template>
     
+    
+    <xsl:template match="author" mode="title">
+        <xsl:value-of select="person/name"/>
+    </xsl:template>
+    
+    <xsl:template match="recipient" mode="title">
+        <xsl:value-of select="person/name"/>
+    </xsl:template>
 
     <xsl:template match="persons">
         <div>
