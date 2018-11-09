@@ -455,6 +455,7 @@
                 <xs:element name="par_entity"/>
                 <xs:element name="est_entity"/>
                 <xs:element name="esse_entity"/>
+                <xs:element name="im_entity"/>
             </xs:choice>    
         </xs:choice>
     </xs:group>
