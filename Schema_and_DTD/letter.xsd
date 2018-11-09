@@ -114,6 +114,8 @@
             <xs:element name="br"/>
             <xs:element name="hr"/>
             <xs:element name="pb"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
             <xs:group ref="tags_in_entities"/>
         </xs:choice>
     </xs:complexType>

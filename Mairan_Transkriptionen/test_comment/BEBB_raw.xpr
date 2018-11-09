@@ -10,6 +10,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Comments</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>1723-04-26_Mairan_Jean_Jacques_Dortous_de-Bernoulli_Johann.xml</String>
                                 </field>
                                 <field name="scenarioIds">

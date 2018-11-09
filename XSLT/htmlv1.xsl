@@ -313,7 +313,8 @@
                 <xsl:number level="any" count="cref" format="1"/>
             </xsl:attribute>
             
-            <xsl:value-of select="exactly-one(document($document_reference)/comments/comment[@id=$id_reference])"></xsl:value-of>
+            <!--<xsl:value-of select="exactly-one(document($document_reference)/comments/comment[@id=$id_reference])"></xsl:value-of>-->
+            <xsl:value-of select="exactly-one(document((concat(document-uri(/),'/../',$document_reference)))/comments/comment[@id=$id_reference])"></xsl:value-of>
             
         </li>
         

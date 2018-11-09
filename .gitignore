@@ -12,6 +12,9 @@
 #ignore finished transformations
 *.html
 
+#ignore oxygen project files
+*.xpr
+
 #ignore weird files (no idea, what they do...)
 .DS_Store
 
