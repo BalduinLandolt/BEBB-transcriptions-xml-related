@@ -19,6 +19,8 @@
 
 <expan>a<am>.</am><ex>nte</ex></expan> <expan>d<am>.</am><ex>iem</ex></expan>
 
+<expan>Cl<am>.</am><ex>arissimus</ex></expan>
+
 Platzhalter
 
 <!-- persontag -->
@@ -34,5 +36,7 @@ Platzhalter
 
 Noch nicht verifizierte Unicode-Entities <!-- unicode --> 
 
+u-Tilde
+u&#x0303;
 m-Tilde 
 &#x006D;&#x0303;
