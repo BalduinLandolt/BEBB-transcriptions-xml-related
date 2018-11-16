@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="comments.xsd" id="001">
+    xsi:noNamespaceSchemaLocation="../../Schema_and_DTD/comments.xsd" id="001">
     <comment id="1">
         <language lang="German">
             <p>
