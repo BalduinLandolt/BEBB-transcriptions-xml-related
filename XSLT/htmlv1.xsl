@@ -311,7 +311,7 @@
         <li>
             <xsl:attribute name="id">
                 <xsl:text>cref</xsl:text>
-                <xsl:number level="any" count="cref" format="1"/>
+                <xsl:number level="any" count="commentmarker" format="1"/>
             </xsl:attribute>
             
             <!--<xsl:value-of select="exactly-one(document($document_reference)/comments/comment[@id=$id_reference])"></xsl:value-of>-->
