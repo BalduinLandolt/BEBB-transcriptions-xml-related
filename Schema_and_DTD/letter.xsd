@@ -130,6 +130,8 @@
             <xs:element name="u" type="underline_element"/>
             <xs:element name="b" type="bold_element"/>
             <xs:group ref="tags_in_entities"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>
     </xs:complexType>
     
@@ -157,6 +159,8 @@
                 <xs:element name="u" type="underline_element"/>
                 <xs:element name="b" type="bold_element"/>
                 <xs:group ref="tags_in_entities"/>
+                <xs:element name="commentmarker"/>
+                <xs:element name="person"/>
             </xs:choice>  
         </xs:sequence>
     </xs:complexType>
@@ -172,6 +176,8 @@
                 <xs:element name="u" type="underline_element"/>
                 <xs:element name="b" type="bold_element"/>
                 <xs:group ref="tags_in_entities"/>
+                 <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
             </xs:choice>  
             <xs:element name="am" type="am_element"/>
             <xs:element name="ex" type="ex_element"/>
@@ -188,6 +194,8 @@
                 <xs:element name="b" type="bold_element"/>
                 <xs:group ref="tags_in_entities"/>
                 <xs:group ref="actual_expansion"/>
+                <xs:element name="commentmarker"/>
+                <xs:element name="person"/>
             </xs:choice>
         </xs:sequence>
         <xs:assert test="(count(am) != 0 and count(ex) != 0)"/>
@@ -210,6 +218,8 @@
             <xs:element name="u" type="underline_element"/>
             <xs:element name="b" type="bold_element"/>
             <xs:group ref="tags_in_entities"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>  
     </xs:complexType>
     
@@ -222,6 +232,8 @@
             <xs:element name="u" type="underline_element"/>
             <xs:element name="b" type="bold_element"/>
             <xs:group ref="tags_in_entities"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>  
     </xs:complexType>
 
@@ -242,7 +254,9 @@
             <xs:element name="figure" type="figure_element"/>
             <xs:group ref="tags_in_entities"/>
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>  
+            <xs:element name="expan" type="expan_element"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>
     </xs:complexType>
 
@@ -259,7 +273,9 @@
             <xs:group ref="tags_in_entities"/>
             <xs:element name="b" type="bold_element"/>
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>    
+            <xs:element name="expan" type="expan_element"/> 
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>
     </xs:complexType>
 
@@ -278,6 +294,8 @@
         <xs:element name="correction" type="correction_element"/>
         <xs:element name="expan" type="expan_element"/> 
         <xs:element name="u" type="underline_element"/>
+        <xs:element name="commentmarker"/>
+        <xs:element name="person"/>
     </xs:choice>
     </xs:complexType>
 
@@ -294,7 +312,9 @@
             <xs:group ref="tags_in_entities"/>
             <xs:element name="i" type="italic_element"/>
             <xs:element name="correction" type="correction_element"/>
-            <xs:element name="expan" type="expan_element"/>    
+            <xs:element name="expan" type="expan_element"/> 
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>
     </xs:complexType>
 
@@ -304,6 +324,8 @@
             <xs:element name="correction" type="correction_element"/>
             <xs:element name="expan" type="expan_element"/> 
             <xs:group ref="tags_in_entities"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
         </xs:choice>  
     </xs:complexType>
 
@@ -313,6 +335,9 @@
             <xs:element name="correction" type="correction_element"/>
             <xs:element name="expan" type="expan_element"/> 
             <xs:group ref="tags_in_entities"/>
+            <xs:element name="commentmarker"/>
+            <xs:element name="person"/>
+            <xs:element name="u" type="underline_element"/>
         </xs:choice>  
     </xs:complexType>
 
@@ -322,6 +347,8 @@
         <xs:element name="correction" type="correction_element"/>
         <xs:element name="expan" type="expan_element"/> 
         <xs:group ref="tags_in_entities"/>
+        <xs:element name="commentmarker"/>
+        <xs:element name="person"/>
     </xs:choice>  
 </xs:complexType>
     
@@ -467,6 +494,8 @@
                 <xs:element name="decembre_entity"/>
                 <xs:element name="Decemb_entity"/>
                 <xs:element name="Novemb_entity"/>
+                <xs:element name="bre_entity"/>
+                <xs:element name="un_entity"/>
             </xs:choice>    
         </xs:choice>
     </xs:group>
