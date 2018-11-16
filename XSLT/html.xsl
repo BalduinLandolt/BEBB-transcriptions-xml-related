@@ -71,7 +71,8 @@
                     body {
                     font-family: "Cambria";
                     display: block;
-                    width: 800pt;
+                    width: 70%;
+                    max-width: 800;
                     padding-top: 20pt;
                     padding-left: 60pt;
                     font-size: 14pt;
@@ -443,4 +444,8 @@
     <xsl:template match="Decemb_entity">Decemb</xsl:template>
     
     <xsl:template match="Novemb_entity">Novemb</xsl:template>
+    
+    <xsl:template match="bre_entity">bre</xsl:template>
+    
+    <xsl:template match="un_entity">un</xsl:template>
 </xsl:transform>
