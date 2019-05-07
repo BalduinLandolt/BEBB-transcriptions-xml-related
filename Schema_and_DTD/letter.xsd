@@ -116,6 +116,7 @@
             <xs:element name="pb"/>
             <xs:element name="commentmarker"/>
             <xs:element name="person"/>
+            <xs:element name="biblio"/>
             <xs:group ref="tags_in_entities"/>
         </xs:choice>
     </xs:complexType>
