@@ -31,8 +31,59 @@ Platzhalter
 <!-- korporationtag -->
 <!-- sachtag -->
 
+<person exists="true" gnd="(DE-588)"></person>
 
 
+<!-- Filius Johannis, Niklaus II (1695-1726): -->
+<person exists="true" gnd="(DE-588)117589144"></person>
+<!-- Adgnatus Johannis, Nicolaus I (1687-1759): -->
+<person exists="true" gnd="(DE-588)119166895"></person>
+<!-- weitere GNDs: Häufig erwähnte Personen -->
+ Newton: (DE-588)118587544
+<person exists="true" gnd="(DE-588)118587544">Newton</person>
+ Riccati Jacopo: (DE-588)119543885
+<person exists="true" gnd="(DE-588)119543885">Riccat</person>
+Daniel Bernoulli (1700-1782): (DE-588)118656503
+Galileo Galilei (1564-1642):  (DE-588)118537229
+John Keill (1671-1721):       (DE-588)124275087
+Jacob Keill (1673-1719):      (DE-588)1055365613  "James Keill"
+James Jurin (1684-1750):      (DE-588)119507978
+Gottfried Wilhelm Leibniz (1646-1716) 118571249
+Pierre Varignon (1654-1722):  (DE-588)119062372
+Giovanni Vezzi (1687-1746):   (DE-588)121710742
+<!--  weitere GNDs: Selten erwähnte Personen
+Johann Jakob Burckhardt (1691-1743)   1089632444
+Lorenzo Bellini (1643-1704):  (DE-588)117584363
+Giovanni Alfonso Borelli (1608-1679): 118659359
+Butintrochi: Does not exist
+Giovanni Ceva (1647-1734):    (DE-588)117650897
+Antonio Conti (1677-1749):    (DE-588)118941941
+Bernard Le Bovier de Fontenelle (57-57):118639056
+Jonas Frederique Fetticq (vor 1698 - nach 1746): Keine GND
+Guido Grandi (1671-1742):     (DE-588)118937669
+Jean Claude Adrien Helvétius (85-55): 116692782
+Jean Jacques Dortous de Mairan (78-71): 11931035X
+Giacomo Filippo Maraldi (1665-1729):  117541613
+Edme Mariotte (1620-1684):    (DE-588)117551988
+Richard Mead (1673-1754):     (DE-588)117559822
+Johann Burkhard Mencke (74-32)(DE-588)118783181
+Pierre Rémond de Montmort (1678-1719) 117601020
+Giovanni Battista Morgagni (82-71)    104265264
+Giovanni Poleni (1683-1761)   (DE-588)11887733X
+Melchior Polignac (1661-1741):(DE-588)119226987
+Archibald Pitcairne (1652-1713)       117689548
+Giovanni Rizzetti (1675-1751):(DE-588)120089807
+Johann Salzmann (1679-1738):  (DE-588)128382058
+William Sherard (1659-1728):  (DE-588)117625493
+Brook Taylor (1685-1731):     (DE-588)118801481
+Lorenzo Tiepolo (1673-1742):  (DE-588)121843858
+Jacques-Bénigne Winslow (1669-1760):  100703828
+Christian Wolff (1679-1754):  (DE-588)118634771
+Theodor Zwinger (1658-1724):  (DE-588)118773321
+-->
+
+
+<facsimile src="0000000.tif"/> <!-- Die einzufügende Zahl befindet sich als Dateiname der entsprechenden Bilder im Ordner X:\BEBB\Bilder_BEBB\BEBB_emanuscripta\000056721\image. Der Ordner ist jeweils mit der Systemnummer des Briefes benannt -->
 
 Noch nicht verifizierte Unicode-Entities <!-- unicode --> 
 
@@ -40,3 +91,5 @@ u-Tilde
 u&#x0303;
 m-Tilde 
 &#x006D;&#x0303;
+
+
