@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE letter SYSTEM "entities.dtd">
 <letter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="letter.xsd"
+   xsi:noNamespaceSchemaLocation="../Schema_and_DTD/letter.xsd"
         page_id="758"
         title="1723-01-05_Bernoulli_Johann-Mairan_Jean_Jacques_Dortous_de"
         catalogue_id="000056388"

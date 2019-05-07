@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE letter SYSTEM "entities.dtd">
 <letter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="letter.xsd"
+   xsi:noNamespaceSchemaLocation="../Schema_and_DTD/letter.xsd"
         page_id="764"
         title="1723-04-26_Mairan_Jean_Jacques_Dortous_de-Bernoulli_Johann"
         catalogue_id="000056392"
-        date="1723.04.26">
+        date="1723.04.26"> 
    <persons>
       <author>
          <person>

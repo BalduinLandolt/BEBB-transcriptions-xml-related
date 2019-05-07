@@ -15,8 +15,8 @@
 #ignore oxygen project files
 *.xpr
 
-#ignore weird files (no idea, what they do...)
+#ignore weird files (Mac OS stuff, it seems)
 .DS_Store
 
 #include forder for comment tests
-!/Mairan_Transkriptionen/test_comment
+#!/Mairan_Transkriptionen/test_comment
