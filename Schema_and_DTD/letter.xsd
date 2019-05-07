@@ -385,6 +385,9 @@
 
     <!-- internal link (standoff link) -->
     <xs:complexType name="entity_element" mixed="true">
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:group ref="tags_in_entities"/>
+        </xs:choice>  
         <xs:attribute name="ref" type="xs:anyURI" use="required"/>
     </xs:complexType>
     
