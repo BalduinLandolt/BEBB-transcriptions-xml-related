@@ -32,6 +32,8 @@ Platzhalter
 <!-- sachtag -->
 
 <person exists="true" gnd="(DE-588)"></person>
+<entity ref="brieftag"></entity>
+<biblio exists="false" beolid="werktag"></biblio>
 
 
 <!-- Filius Johannis, Niklaus II (1695-1726): -->
