@@ -3,9 +3,11 @@
 #ignore most folders
 /Bourguet_Transkriptionen/*
 /Mairan_Transkriptionen/*
+/Michelotti_Test/*
 /Michelotti_Transkriptionen/*
 /NicIB_Michelotti_Transkriptionen/*
-/Varignon-NicI_Transkriptionen/*
+/NicIB_Varignon_Transkriptionen/*
+/Tressan_JohIIB_Transkriptionen/*
 /XML Dateien aus Testdump/*
 /xml/*
 
